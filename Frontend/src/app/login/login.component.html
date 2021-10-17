@@ -1,0 +1,23 @@
+
+<div class="container">
+
+    <form (ngSubmit)="loginEmp()">
+
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="text" class="form-control" #Empid="ngModel" [(ngModel)]="emp.Empid"
+                    placeholder="Username" name="Empid" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password " #password="ngModel"
+                    [(ngModel)]="emp.Password" name="Password" required>
+
+            </div>
+        </div>
+        <button type="submit" class="btnRegister" value="Register">Submit</button>
+
+    </form>
+
+</div>  
